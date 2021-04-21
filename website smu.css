@@ -67,7 +67,7 @@ display: none;
 
 .burger{
 
-  display: block;
+  display: none;
   cursor: pointer;
 
 }
