@@ -1,9 +1,9 @@
 *{
-  width: 100%;
+ 
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  max-height: 100vh;
+ 
   
  
 
@@ -17,12 +17,20 @@
 
 body {
   overflow-x: hidden;
-  float: left;
   background-color: #00FFCF;
-  max-width: 100vw;
+
 }
 
 
+nav{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  
+
+}
 
 
 
