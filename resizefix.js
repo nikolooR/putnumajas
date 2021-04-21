@@ -4,5 +4,5 @@ window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(() => {
     document.body.classList.remove("resize-animation-stopper");
-  }, 100);
+  }, 400);
 });
