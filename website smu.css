@@ -1,186 +1,187 @@
 *{
- 
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
- 
-  
- 
-
+  font-family: 'Nunito', sans-serif;
 }
-
 
 :root {
   --bg: #00FFCF; /* bright green, website background */
+  --db: #00d8b0;
   --pg: #E5FFF9; /* pale green, quite white-ish button background */
+  --tx: #000000; /* text colour */
 }
 
 body {
-  
-  background-color: #00FFCF;
+  background-color: var(--bg);
   overflow-x: hidden;
-
 }
 
+.resize-animation-stopper nav .nav-links {
+  transition: none !important;
+}
+
+.logo img {
+  height: 60px;
+}
+
+h1{
+  font-weight: 800;
+  font-size: 54px;  
+}
+
+h2{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+img#banner {
+  content:url(img/webp/banner.webp);
+}
+
+a.button button {
+  background-color: var(--pg);
+  height: 50px;
+  margin-top: 10px;
+  border-width: 0;
+  border-radius: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 24px;
+  outline: none;
+}
+
+a.button button:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+div.content{
+  width:60vw;
+  margin-left:20vw;
+  margin-right:20vw;
+}
 
 nav{
-
+  background-color: var(--bg);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  font-family: 'Nunito Sans', sans-serif;
-  
- 
-
-
+  height: 78px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
+
 .nav-links{
-
-display: flex;
-justify-content: space-around;
-width: 40%;
-
-
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
 }
 
 .nav-links li{
-list-style: none;
-
+  list-style: none;
 }
 
 .nav-links a{
-
-color: black;
-text-decoration: none;
-font-weight: bold;
-font-size: 25px;
-
-
+  color: var(--tx);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 22px;
 }
 
 .burger{
-
-display: none;
-
+  display: none;
 }
 
 .burger{
-
   display: none;
   cursor: pointer;
-
 }
 
 .burger div {
-
-width: 30px;
-height: 4px;
-background-color: black;
-margin: 5px;
-transition: all 0.3s ease;
-
-
+  width: 30px;
+  height: 4px;
+  background-color: var(--tx);
+  margin: 5px;
+  transition: all 0.3s ease;
 }
 
-
-
-@media screen and (max-width:1350px){
-
-
+@media screen and (max-width:1160px){
+  div.content{
+    width:80vw;
+    margin-left:10vw;
+    margin-right:10vw;
+  }
   .nav-links{
-  
-  width: 60%;
-  
+    width: 60%;
   }
-  
 }
 
-@media screen and (max-width:850px){
-
+@media screen and (max-width:860px){
+  div.content{
+    width:90vw;
+    margin-left:5vw;
+    margin-right:5vw;
+  }
   body{
-
     overflow-x: hidden;
-
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: calc(100vh - 78px);
+    top: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    background-color: var(--db);
+  }
+  .nav-links li{
+    opacity: 0;
   }
 
- .nav-links{
-
-  position: absolute;
-  right: 0px;
-  height: 90vh;
-  top: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center ;
-  width: 50%;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in;
-  background-color: #006653;
+  .burger{
+    display: block;
   }
-
- .nav-links li{
-
-  opacity: 0;
-
 }
 
-.burger{
-
-display: block;
-
+@media screen and (max-width:660px){
+  a.button button{
+    margin-bottom: 15px;
+  }
+  img#banner{
+    content:url(img/webp/smallbanner.webp);
+  }
 }
-
-  
-
-
-}
-
 
 .nav-active{
-
-transform: translateX(0%);
-
+  transform: translateX(0%);
 }
-
-
-
 
 @keyframes navLinkFade{
-
-
-from{
-
-opacity: 0;
-transform: translateX(50px);
-
-
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
-
-to{
-
-opacity: 1;
-transform: translateX(0px);
-
-}
-
-}
-
-
 
 .toggle .line1{
-
-transform:  rotate(-45deg) translate(-5px,8px);
-
+  transform:  rotate(-45deg) translate(-5px,8px);
 }
-.toggle .line2{
 
+.toggle .line2{
   opacity: 0;
-  
 }
 
 .toggle .line3{
-
-transform:  rotate(45deg) translate(-5px,-8px);
-    
+  transform:  rotate(45deg) translate(-5px,-8px);
 }
