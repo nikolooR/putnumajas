@@ -4,12 +4,15 @@
   padding: 0px;
   box-sizing: border-box;
   max-height: 100vh;
+  
  
 
-  
-  
+}
 
 
+:root {
+  --bg: #00FFCF; /* bright green, website background */
+  --pg: #E5FFF9; /* pale green, quite white-ish button background */
 }
 
 body {
