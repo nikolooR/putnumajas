@@ -5,6 +5,7 @@
   font-family: 'Nunito', sans-serif;
 }
 
+
 :root {
   --bg: #00FFCF; /* bright green, website background */
   --db: #00d8b0;
@@ -15,7 +16,16 @@
 body {
   background-color: var(--bg);
   overflow-x: hidden;
+  
+  
+   
+    
+   
 }
+
+
+
+
 
 .resize-animation-stopper nav .nav-links {
   transition: none !important;
@@ -41,13 +51,12 @@ h2{
 
 position: relative;
 
+
 }
 .banner img{
-
-
+width: 100%;
 position: absolute;
 z-index: -1;
-
 
 
 }
@@ -92,6 +101,14 @@ a.button button:active {
   width: 200px;
   transition: none;
   
+}
+
+button:focus{
+
+  border-color:transparent!important;
+  outline:none;
+
+
 }
 
 div.content{
@@ -188,16 +205,30 @@ nav{
 }
 
 @media screen and (max-width:660px){
+
+  body{
+
+  overflow-x: hidden;
+
+  }
   a.button button{
     margin-bottom: 15px;
   }
 
-
-  .banner  {
-    width: 200%;
-    margin-left: 0;
+  
+ 
+  .banner img  {
+    
+   
+  
+    
+    
+    
+    
   }
 }
+
+
 
 .nav-active{
   transform: translateX(0%);

@@ -32,3 +32,21 @@ navSlide();
 
 
 
+
+
+
+
+
+const banner1 = document.getElementById('banner1');
+const banner2 = document.getElementById('banner2');
+const banner3 = document.getElementById('banner3');
+
+window.addEventListener('scroll', function(){
+ const value = window.scrollY;
+ banner1.style.top = value * 0.35 + 'px';
+ banner2.style.top = value * 0.2 + 'px';
+ 
+
+
+
+});
