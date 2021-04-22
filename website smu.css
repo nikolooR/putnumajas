@@ -37,7 +37,7 @@ h2{
 }
 
 img#banner {
-  content:url(img/webp/banner.webp);
+  content:url(img/webp/banner.webp) / "Koki un putnu mājas";
 }
 
 a.button button {
@@ -156,7 +156,7 @@ nav{
     margin-bottom: 15px;
   }
   img#banner{
-    content:url(img/webp/smallbanner.webp);
+    content:url(img/webp/smallbanner.webp) / "Koki un putnu mājas";
   }
 }
 
