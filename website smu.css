@@ -265,7 +265,7 @@ nav{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 50vw;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     background-color: var(--db);
@@ -273,10 +273,9 @@ nav{
   .nav-links li{
     opacity: 0;
     height: calc((100vh - 78px) / 3);
-  }
-  .nav-links li a {
-    line-height: calc((100vh - 78px) / 3);
-    vertical-align: center;
+    position: relative; 
+    display: flex;
+    align-items: center;
   }
   .burger{
     display: block;
