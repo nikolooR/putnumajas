@@ -46,7 +46,6 @@ position: relative;
 
 
 position: absolute;
-margin-top: 100px;
 z-index: -1;
 
 
@@ -194,8 +193,11 @@ nav{
   a.button button{
     margin-bottom: 15px;
   }
-  img#banner{
-    content:url(img/webp/smallbanner.webp);
+
+
+  .banner  {
+    width: 200%;
+    margin-left: 0;
   }
 }
 
