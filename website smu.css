@@ -5,24 +5,21 @@
   font-family: 'Nunito', sans-serif;
 }
 
-
 :root {
   --bg: #00FFCF; /* bright green, website background */
-  --db: #00d8b0;
+  --db: #00ecc1;
   --pg: #E5FFF9; /* pale green, quite white-ish button background */
   --tx: #000000; /* text colour */
 }
 
-body {
-  background-color: var(--bg);
-  overflow-x: hidden;
-  
-   
+html {
+  scroll-behavior: smooth;
 }
 
-
-
-
+body {
+  background-color: var(--bg);
+  overflow-x: hidden;   
+}
 
 .resize-animation-stopper nav .nav-links {
   transition: none !important;
@@ -31,6 +28,20 @@ body {
 .logo img {
   width: 122px;
   height: 60px;
+  cursor: pointer;
+}
+
+.logo img:hover, .nav-links li:hover, .nav-active a:hover, .burger:hover {
+  opacity: 0.3;
+  transition: all 0.25s ease;
+}
+
+.logo img:active, .nav-links li:active, .burger:active {
+  transform: scale(0.8);
+}
+
+.nav-active a:active {
+  font-size: 20px;
 }
 
 h1{
@@ -41,7 +52,6 @@ h1{
 h3{
   font-weight: 800;
   font-size: 54px;  
-
 }
 
 h2{
@@ -49,19 +59,14 @@ h2{
   font-size: 24px;
 }
 
-
 .banner {
-
-position: relative;
-
-
+  position: relative;
 }
+
 .banner img{
-width: 100%;
-position: absolute;
-z-index: -1;
-
-
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 img#banner1 {
@@ -92,7 +97,6 @@ a.button button:hover {
   color: rgb(255, 255, 255);
   background-color: #42c73e;
   transition:  0.5s ease;
-  
 }
 
 a.button button:active {
@@ -101,11 +105,11 @@ a.button button:active {
   font-size: 20px;
   width: 200px;
   transition: none;
-  
 }
 
 div.after{
   background-color: var(--bg);
+  z-index: 0;
 }
 
 div.spacer, div.after {
@@ -123,6 +127,7 @@ div.navigation {
   height: 78px;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 nav{
@@ -151,8 +156,6 @@ nav{
   font-size: 22px;
 }
 
-
-
 .burger{
   display: none;
   cursor: pointer;
@@ -166,114 +169,77 @@ nav{
   transition: all 0.3s ease;
 }
 
-
-
 .glass {
-
-display: -webkit-flex;
-display: -moz-flex;
-display: -ms-flex;
-display: -o-flex;
-display: flex;
-
-
-
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 
 .wrapper{
-
-margin-top: 5vh;
-display: grid;
-grid-template-columns:repeat(2, 1fr) ;
-grid-gap: 220px;
-justify-content: center;
-align-items: center;
-width: 100%;
-
-
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-
 
 .wrapper .glass{
-
-height: 700px;
-border-radius: 50px;
-overflow: hidden;
-background-color: #ffffff8e;
-backdrop-filter: #42c73e;
-border: 3px solid var(--tx);
-
-
-
-
+  height: 440px;
+  border-radius: 70px;
+  overflow: hidden;
+  background-color: var(--db);
 }
+
 .insideglass{
   width: 100%;
   padding: 20px;
-  
-
-
-
 }
+
 .imgbox{
   position: relative;
-  height: 500px;
-
-
-  
-
+  height: 300px;
 }
+
 .imgbox img{
-
-position: absolute;
-width: 100%;
-height: 100%;
-border-radius: 50px;
-object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
 }
+
 .namebox{
-
   height: 50px;
-  background-color: #00ff808e;
-
-
-
+  font-size: 22px;
+  text-align: center;
 }
 
-.namebox a{
-  
+.namebox p{
+  display: inline-block;
   font-weight: 600;
   font-size: 24px;
+  line-height: 50px;
+  vertical-align: center;
   color: #000000;
-
-  
- 
-
-
 }
+
 .pricebox{
-  height: 100px;
-  background-color: #ff00008e;
+  height: 50px;
   color: #000000;
+  text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.pricebox p{
+  height: 50px;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 50px;
+  vertical-align: center;
+}
 
 @media screen and (max-width:1160px){
   div.content{
@@ -306,6 +272,11 @@ object-fit: cover;
   }
   .nav-links li{
     opacity: 0;
+    height: calc((100vh - 78px) / 3);
+  }
+  .nav-links li a {
+    line-height: calc((100vh - 78px) / 3);
+    vertical-align: center;
   }
   .burger{
     display: block;
@@ -324,6 +295,9 @@ object-fit: cover;
   }
   img#banner3 {
     content:url(img/webp/bubblessmall.webp);
+  }
+  .wrapper{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
