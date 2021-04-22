@@ -17,9 +17,6 @@ body {
   background-color: var(--bg);
   overflow-x: hidden;
   
-  
-   
-    
    
 }
 
@@ -103,13 +100,7 @@ a.button button:active {
   
 }
 
-button:focus{
 
-  border-color:transparent!important;
-  outline:none;
-
-
-}
 
 div.content{
   width:60vw;
@@ -206,26 +197,14 @@ nav{
 
 @media screen and (max-width:660px){
 
-  body{
-
-  overflow-x: hidden;
-
-  }
+  
   a.button button{
     margin-bottom: 15px;
   }
 
   
  
-  .banner img  {
-    
-   
   
-    
-    
-    
-    
-  }
 }
 
 
