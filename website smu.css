@@ -36,6 +36,12 @@ body {
 h1{
   font-weight: 800;
   font-size: 54px;  
+  text-align: center;
+}
+h3{
+  font-weight: 800;
+  font-size: 54px;  
+
 }
 
 h2{
@@ -162,6 +168,105 @@ nav{
   margin: 5px;
   transition: all 0.3s ease;
 }
+
+
+
+.glass {
+
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+}
+
+.wrapper{
+
+
+display: grid;
+grid-template-columns:repeat(3, 1fr) ;
+grid-gap: 30px;
+
+
+}
+
+
+.wrapper .glass{
+
+width: 500px;
+height: 400px;
+border-radius: 10px;
+transition: transform 0.5s ease-out;
+overflow: hidden;
+text-align: center;
+color: rgb(0, 0, 0);
+padding: 5%;
+background-color: #ffffff8e;
+backdrop-filter: #42c73e;
+border: 2px solid var(--tx);
+
+
+
+
+}
+
+
+.glass h2{
+
+font-size: 25px;
+margin-bottom: 30px;
+color: #000000;
+
+}
+
+.glass p{
+
+line-height: 1.9;
+color: #000000;
+
+}
+
+
+
+.wrapper .glass:before{
+
+content: '';
+background: #ffffffa9;
+width: 60%;
+height: 100%;
+top: 0;
+left: -125%;
+transform: skew(45deg);
+position: absolute;
+animation-direction: left;
+transition-duration: 0.5s;
+
+
+}
+
+.wrapper .glass:hover{
+
+transform: translateY(-5%);
+
+}
+
+.wrapper .glass:hover:before{
+
+  left: 150%;
+  
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1160px){
   div.content{
