@@ -22,6 +22,7 @@ body {
 }
 
 .logo img {
+  width: 122px;
   height: 60px;
 }
 
@@ -124,11 +125,6 @@ nav{
 }
 
 @media screen and (max-width:860px){
-  div.content{
-    width:90vw;
-    margin-left:5vw;
-    margin-right:5vw;
-  }
   body{
     overflow-x: hidden;
   }
