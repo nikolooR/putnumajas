@@ -62,6 +62,13 @@ div.content{
   margin-right:20vw;
 }
 
+div.navigation {
+  width: 100vw;
+  height: 78px;
+  position: fixed;
+  top: 0;
+}
+
 nav{
   background-color: var(--bg);
   display: flex;
@@ -69,8 +76,6 @@ nav{
   align-items: center;
   height: 78px;
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 }
 
 .nav-links{
