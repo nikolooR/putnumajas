@@ -66,11 +66,9 @@ z-index: -1;
 
 img#banner1 {
   content:url(img/webp/baselayer.webp);
- 
 }
 img#banner2 {
   content:url(img/webp/layerfade1.webp);
-  
 }
 img#banner3 {
   content:url(img/webp/bubbles.webp);
@@ -125,7 +123,6 @@ div.navigation {
   height: 78px;
   position: fixed;
   top: 0;
-  
 }
 
 nav{
@@ -300,7 +297,6 @@ transform: translateY(-5%);
   .nav-links li{
     opacity: 0;
   }
-
   .burger{
     display: block;
   }
@@ -310,6 +306,15 @@ transform: translateY(-5%);
   a.button button{
     margin-bottom: 15px;
   } 
+  img#banner1 {
+    content:url(img/webp/baselayersmall.webp);
+  }
+  img#banner2 {
+    content:url(img/webp/layerfade1small.webp);
+  }
+  img#banner3 {
+    content:url(img/webp/bubblessmall.webp);
+  }
 }
 
 .nav-active{
