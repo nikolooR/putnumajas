@@ -55,6 +55,16 @@ a.button button {
 a.button button:hover {
   cursor: pointer;
   outline: none;
+  color: rgb(255, 255, 255);
+  background-color: #42c73e;
+  transition:  0.5s ease;
+}
+
+a.button button:active {
+  background-color: #3bac37;
+  color: #ffffff;
+  font-size: 22px;
+  transition: none;
 }
 
 div.content{
@@ -96,9 +106,7 @@ nav{
   font-size: 22px;
 }
 
-.burger{
-  display: none;
-}
+
 
 .burger{
   display: none;
