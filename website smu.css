@@ -36,8 +36,33 @@ h2{
   font-size: 24px;
 }
 
-img#banner {
-  content:url(img/webp/banner.webp);
+
+.banner {
+
+position: relative;
+
+}
+.banner img{
+
+
+position: absolute;
+margin-top: 100px;
+z-index: -1;
+
+
+
+}
+
+img#banner1 {
+  content:url(img/webp/baselayer.webp);
+ 
+}
+img#banner2 {
+  content:url(img/webp/layerfade1.webp);
+  
+}
+img#banner3 {
+  content:url(img/webp/bubbles.webp);
 }
 
 a.button button {
@@ -58,13 +83,18 @@ a.button button:hover {
   color: rgb(255, 255, 255);
   background-color: #42c73e;
   transition:  0.5s ease;
+  
 }
 
 a.button button:active {
   background-color: #3bac37;
   color: #ffffff;
-  font-size: 22px;
+  font-size: 20px;
+  width: 200px;
   transition: none;
+  margin-top: 14px;
+  height: 44px;
+  
 }
 
 div.content{
@@ -78,6 +108,7 @@ div.navigation {
   height: 78px;
   position: fixed;
   top: 0;
+  
 }
 
 nav{
