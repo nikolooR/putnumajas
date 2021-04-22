@@ -100,7 +100,10 @@ a.button button:active {
   
 }
 
-
+div.after{
+  background-color: var(--bg);
+  margin-bottom: 50px;
+}
 
 div.content{
   width:60vw;
@@ -196,18 +199,10 @@ nav{
 }
 
 @media screen and (max-width:660px){
-
-  
   a.button button{
     margin-bottom: 15px;
-  }
-
-  
- 
-  
+  } 
 }
-
-
 
 .nav-active{
   transform: translateX(0%);
