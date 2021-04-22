@@ -175,16 +175,20 @@ display: -moz-flex;
 display: -ms-flex;
 display: -o-flex;
 display: flex;
-align-items: center;
-justify-content: center;
+
+
+
 }
 
 .wrapper{
 
-
+margin-top: 5vh;
 display: grid;
 grid-template-columns:repeat(2, 1fr) ;
-grid-gap: 30px;
+grid-gap: 220px;
+justify-content: center;
+align-items: center;
+width: 100%;
 
 
 }
@@ -192,68 +196,75 @@ grid-gap: 30px;
 
 .wrapper .glass{
 
-width: 100%;
-
-border-radius: 20px;
-transition: transform 0.5s ease-out;
+height: 700px;
+border-radius: 50px;
 overflow: hidden;
-text-align: center;
-color: rgb(0, 0, 0);
-padding: 5%;
 background-color: #ffffff8e;
 backdrop-filter: #42c73e;
-border: 2px solid var(--tx);
+border: 3px solid var(--tx);
 
 
 
 
 }
-
-
-.glass h2{
-
-font-size: 25px;
-margin-bottom: 30px;
-color: #000000;
-
-}
-
-.glass p{
-
-line-height: 1.9;
-color: #000000;
-
-}
-
-
-
-.wrapper .glass:before{
-
-content: '';
-background: #ffffffa9;
-width: 60%;
-height: 100%;
-top: 0;
-left: -155%;
-transform: skew(45deg);
-position: absolute;
-animation-direction: left;
-transition-duration: 0.5s;
-
-
-}
-
-.wrapper .glass:hover{
-
-transform: translateY(-5%);
-
-}
-
-.wrapper .glass:hover:before{
-
-  left: 150%;
+.insideglass{
+  width: 100%;
+  padding: 20px;
   
+
+
+
 }
+.imgbox{
+  position: relative;
+  height: 500px;
+
+
+  
+
+}
+.imgbox img{
+
+position: absolute;
+width: 100%;
+height: 100%;
+border-radius: 50px;
+object-fit: cover;
+}
+.namebox{
+
+  height: 50px;
+  background-color: #00ff808e;
+
+
+
+}
+
+.namebox a{
+  
+  font-weight: 600;
+  font-size: 24px;
+  color: #000000;
+
+  
+ 
+
+
+}
+.pricebox{
+  height: 100px;
+  background-color: #ff00008e;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
 
 
 
