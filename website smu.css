@@ -102,7 +102,10 @@ a.button button:active {
 
 div.after{
   background-color: var(--bg);
-  margin-bottom: 50px;
+}
+
+div.spacer, div.after {
+  margin:0;
 }
 
 div.content{
