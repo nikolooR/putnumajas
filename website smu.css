@@ -181,27 +181,30 @@ nav{
   margin-top: 5vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 100px;
+  padding: 5%;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  
 }
 
 .wrapper .glass{
-  height: 440px;
+  height: 100%;
+  width: 500px;
   border-radius: 70px;
   overflow: hidden;
   background-color: var(--db);
 }
 
 .insideglass{
-  width: 100%;
-  padding: 20px;
+  width: 500px;
+  padding: 50px;
 }
 
 .imgbox{
   position: relative;
-  height: 300px;
+  
+  height: 500px;
 }
 
 .imgbox img{
@@ -216,30 +219,41 @@ nav{
   height: 50px;
   font-size: 22px;
   text-align: center;
+
+ 
 }
 
 .namebox p{
   display: inline-block;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 50px;
   vertical-align: center;
   color: #000000;
 }
 
 .pricebox{
+  
   height: 50px;
   color: #000000;
   text-align: center;
+  margin-top: 10px;
+  
+ 
 }
 
 .pricebox p{
-  height: 50px;
+ 
+  height: 40px;
   font-weight: 800;
   font-size: 48px;
   line-height: 50px;
   vertical-align: center;
+  left: 10px;
+  
 }
+
+
 
 @media screen and (max-width:1160px){
   div.content{
@@ -250,6 +264,22 @@ nav{
   .nav-links{
     width: 60%;
   }
+  .wrapper{
+    grid-gap: 30px;
+
+
+  }
+  .wrapper .glass {
+    height: 100%;
+    width: 400px;
+    
+  }
+  .imgbox{
+
+    height: 300px;
+
+  }
+
 }
 
 @media screen and (max-width:860px){
@@ -280,6 +310,17 @@ nav{
   .burger{
     display: block;
   }
+  .wrapper .glass {
+    height: 100%;
+    width: 300px;
+    
+  }
+  .imgbox{
+
+    height: 200px;
+
+  }
+
 }
 
 @media screen and (max-width:660px){
@@ -298,6 +339,17 @@ nav{
   .wrapper{
     grid-template-columns: repeat(1, 1fr);
   }
+  .wrapper .glass {
+    height: 100%;
+    width: 500px;
+    
+  }
+  .imgbox{
+
+    height: 400px;
+
+  }
+
 }
 
 .nav-active{
