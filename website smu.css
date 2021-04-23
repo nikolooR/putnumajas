@@ -311,6 +311,7 @@ nav{
     display: block;
   }
   .wrapper .glass {
+    overflow: hidden;
     height: 100%;
     width: 300px;
     
@@ -340,13 +341,16 @@ nav{
     grid-template-columns: repeat(1, 1fr);
   }
   .wrapper .glass {
+    overflow: hidden;
     height: 100%;
-    width: 500px;
+    width: 300px;
+    align-items: center;
+    margin: auto;
     
   }
   .imgbox{
 
-    height: 400px;
+    height: 200px;
 
   }
 
