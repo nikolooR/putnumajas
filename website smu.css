@@ -79,6 +79,43 @@ img#banner3 {
   content:url(img/webp/bubbles.webp);
 }
 
+.banner2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #00E2CF;
+  z-index: -5;
+  
+
+}
+
+.banner2 img{
+  width: 100%;
+  position: absolute;
+  
+  
+
+}
+
+
+img#ship1 {
+  content:url(img/webp/ship1.webp);
+  z-index: -4;
+  
+}
+img#ship2 {
+  content:url(img/webp/ship2.webp);
+  z-index: -3;
+}
+img#ship3 {
+  content:url(img/webp/ship3.webp);
+  z-index: -2;
+}
+img#ship4 {
+  content:url(img/webp/ship4.webp);
+  z-index: -1;
+}
+
 a.button button {
   background-color: var(--pg);
   height: 50px;
@@ -187,6 +224,7 @@ nav{
   align-items: center;
   
 }
+
 
 .wrapper .glass{
   height: 100%;
